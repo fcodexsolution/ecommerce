@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/homeback"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:padding="16dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/acionbarnametitle"
+        android:textSize="20sp"
+        android:gravity="center|left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6.6"
+        android:text="Action Bar Name" />
+
+    <ImageView
+        android:id="@+id/actionBarRightImage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:padding="15dp"
+        android:src="@drawable/ic_add" />
+
+</LinearLayout>

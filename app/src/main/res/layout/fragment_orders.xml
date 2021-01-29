@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NavFragments.OrdersFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardElevation="4dp"
+        android:id="@+id/order_card_view">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="@string/order_date"
+                android:id="@+id/order_date"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"/>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:background="@color/black"/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_22_sep_2021"
+                android:id="@+id/order_date_digits"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/d_groom"
+            android:id="@+id/order_image"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mens_style"
+                    android:layout_toRightOf="@+id/order_image"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:id="@+id/order_gender"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mens_style"
+                    android:layout_toRightOf="@+id/order_image"
+                    android:textSize="15sp"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/order_name"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 100"
+                    android:layout_toRightOf="@+id/order_image"
+                    android:textSize="15sp"
+                    android:layout_marginTop="60dp"
+                    android:textStyle="bold"
+                    android:id="@+id/order_price"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="90dp"
+                    android:text="@string/order_again"
+                    app:cornerRadius="5dp"
+                    android:textAllCaps="false"
+                    android:id="@+id/order_again"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

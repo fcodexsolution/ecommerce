@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fcodex.ecommerce">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ecommerce">
+        <activity android:name=".Activities.AllCategories"/>
+        <activity android:name=".Activities.ConfirmCart" />
+        <activity android:name=".Activities.EditProfile" />
+        <activity android:name=".Activities.FailedActivity" />
+        <activity android:name=".Activities.FinishActivity" />
+        <activity android:name=".Activities.CardPaymentActivity" />
+        <activity android:name=".Activities.NotificationActivity" />
+        <activity android:name=".Activities.NewAddressActivity" />
+        <activity android:name=".Activities.AddressActivity" />
+        <activity android:name=".Activities.SelectedCartActivity" />
+        <activity android:name=".Activities.CartActivity" />
+        <activity android:name=".Activities.SearchActivity" />
+        <activity android:name=".Activities.CategoriesActivity" />
+        <activity android:name=".Activities.FeaturedActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Ecommerce.NoActionBar" />
+        <activity android:name=".Activities.ForgetPassword" />
+        <activity android:name=".Activities.UserRegistration" />
+        <activity android:name=".Activities.UserLogin" />
+        <activity android:name=".Activities.LoginAndRegister" />
+        <activity android:name=".Activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

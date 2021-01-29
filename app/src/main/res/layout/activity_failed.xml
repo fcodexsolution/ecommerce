@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.FailedActivity">
+
+    <ImageView
+        android:id="@+id/card_pic"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_height="150dp"
+        android:src="@drawable/failed"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E30832"
+        android:text="Ok"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>
