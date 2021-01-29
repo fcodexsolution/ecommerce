@@ -62,7 +62,9 @@ public class UserLogin extends AppCompatActivity {
 //                else if (password.isEmpty()){
 //                    Toast.makeText(UserLogin.this, "Password is Required", Toast.LENGTH_SHORT).show();
 //                }
-                    startActivity(new Intent(UserLogin.this, MainActivity.class));
+                Intent intent = new Intent(UserLogin.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
                     finish();
             }
         });

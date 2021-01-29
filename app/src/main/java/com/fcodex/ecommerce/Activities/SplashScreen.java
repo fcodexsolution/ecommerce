@@ -18,23 +18,26 @@ public class SplashScreen extends AppCompatActivity {
 
 
     private Sharedpreference sharedpreference;
-
+int i=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
 
         // Hide status bar
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         sharedpreference = new Sharedpreference(this);
         if (sharedpreference.LoadDarkMode()) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            //setTheme(R.style.Theme_AppCompat_NoActionBar);
-        } else {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            setTheme(R.style.Theme_AppCompat_NoActionBar);
+
+//            //setTheme(R.style.Theme_AppCompat_NoActionBar);
+        }
+        else {
+            setTheme(R.style.Theme_AppCompat_DayNight_NoActionBar);
+
             //setTheme(R.style.Theme_AppCompat_DayNight_NoActionBar);
         }
+        setContentView(R.layout.activity_splash_screen);
 
         Handler handler = new Handler();
         handler.postDelayed(() -> {

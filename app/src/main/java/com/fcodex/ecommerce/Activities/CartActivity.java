@@ -59,7 +59,11 @@ public class CartActivity extends AppCompatActivity {
         home_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                Toast.makeText(CartActivity.this, "test", Toast.LENGTH_SHORT)
+                     .show();
+Intent intent =                new Intent(CartActivity.this, MainActivity.class);
+intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
                 finish();
             }
         });
